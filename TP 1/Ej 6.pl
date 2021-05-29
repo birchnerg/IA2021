@@ -1,0 +1,21 @@
+% HECHOS
+habilidad(carolina, guitarrista).
+habilidad(jose, guitarrista).
+habilidad(miguel, guitarrista).
+habilidad(mariano, cantante).
+habilidad(silvia, cantante).
+habilidad(eduardo, baterista).
+habilidad(diego, baterista).
+habilidad(laura, baterista).
+habilidad(mauro, cantante).
+ciudad(carolina, rosario).
+ciudad(jose, rosario).
+ciudad(miguel, funes).
+ciudad(mariano, rosario).
+ciudad(silvia, funes).
+ciudad(eduardo, roldan).
+ciudad(diego, casilda).
+ciudad(laura, rosario).
+ciudad(mauro, funes).
+% REGLAS
+forma_banda(X):-ciudad(C,X), habilidad(C,cantante), ciudad(G,X), habilidad(G,guitarrista), ciudad(B,X), habilidad(B,baterista).
